@@ -1,18 +1,43 @@
 import styles from "@/styles/Home.module.css"
+import Image from "next/image"
 export default function NavFirst(){
     return(
-        <div className={styles.navbar}>
-            <div>
-                <h3 style={{color:"#634b03", fontFamily:"roboto", fontWeight:"500"}}>MInisterio Assembleia de Deus</h3>
-            </div>
-            <div style={{display:"flex", justifyContent:"flex-end", position:"relative", color:"#fff", fontFamily:"roboto", fontWeight:"500"}}>
-                <img style={{width:"30px",margin:"1rem"}} src="/facebookbr.png" alt="facebook" />
-                <img style={{width:"30px",margin:"1rem"}} src="/inst.png" alt="Instagram" />
-                <img style={{width:"30px",margin:"1rem"}} src="/logoYouBr.png" alt="Instagram" />
+        <section className={styles.navbar}>
+            
+                <h3>MInistério Ailton Santos e Valter</h3>
+            
+            <div className={styles.icoNavbarRedes}>
+                <a href="https://www.facebook.com/tamireseailtonsantos" target="_blank" rel="noopener noreferrer">
+                <Image
+                src="/facebookbr.png"
+                width={30}
+                height={30}
+                alt="icone facebook"
+                className={styles.iconeNavbarFacebook}
+                />
+                </a>
+                <a href="https://www.instagram.com/ailtonsantosevalter/" target="_blank" rel="noopener noreferrer">
+                <Image
+                src="/inst.png"
+                width={30}
+                height={30}
+                alt="icone instagram"
+                className={styles.iconeNavbarInstagram}
+                />
+                </a>
+                <a href="https://www.youtube.com/@ailtonsantosevaltercanalof5218" target="_blank" rel="noopener noreferrer">
+                <Image
+                src="/logoYouBr.png"
+                width={30}
+                height={30}
+                alt="icone Youtube"
+                className={styles.iconeNavbarYouTube}
+                />
+                </a>
                
             </div>
 
 
-        </div>
+        </section>
     )
 }

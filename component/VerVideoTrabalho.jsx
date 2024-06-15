@@ -2,7 +2,7 @@ import React from 'react';
 
 const VerVideoTrabalho = ({ videoId }) => {
   return (
-    <div>
+    
       
       <div className="video-container">
         <iframe style={{}}
@@ -14,7 +14,7 @@ const VerVideoTrabalho = ({ videoId }) => {
           allowFullScreen
         ></iframe>
       </div>
-    </div>
+    
   );
 };
 

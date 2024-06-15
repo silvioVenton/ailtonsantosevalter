@@ -2,8 +2,7 @@
 .principal{
   margin: 0;
   padding: 0;
- z-index: 300;
-  
+  z-index: 300;
   position:relative ;
 }
 
@@ -14,6 +13,7 @@
   width: 100%;
   height: 80px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color:#D2B765 ;
@@ -23,15 +23,34 @@
   object-position: relative;
   
 }
-.video{
-  display: flex;
-  height: 100vh;
+.navbar h3{
+  color:#634b03;
+  font-Family:"roboto"; 
+  font-Weight:500;
+}
+
+.icoNavbarRedes{
+  display:flex;
+  justify-Content:flex-end; 
+  position:relative;
+  color:#fff; 
+  font-Family:"roboto";
+  font-Weight:500;
+  width: 20%;
+  justify-content: space-evenly;
+}
+
+
+
+
+.video {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
   object-fit: cover;
-background-position: fixed;
-  position:fixed;
-  
- 
+  z-index: -1; /* Para garantir que o vídeo fique no fundo */
 }
 .overlay{
   width:100%; 
@@ -51,7 +70,6 @@ background-position: fixed;
 }
 
 .HeadDuplaGeral{
-  
   display:flex;
   flex-direction: column;
   width:100%;
@@ -59,17 +77,16 @@ background-position: fixed;
   justify-Content:center;
 }
 .HeadDuplaContainer{
-  
   margin-top: 20vh;
   width:100%;
   display:flex;
   flex-Wrap:wrap;
 }
 .HeadDuplaLogo{
-  
   width:40%;
   display:flex;
   justify-Content:flex-end;
+  
 }
 .logoImg{
   position: relative;
@@ -77,7 +94,11 @@ background-position: fixed;
   z-Index:100;
 }
 .HeadDuplaTexto{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   width:50%;
+  
 }
 .HeadDuplaTexto span{
   color:#fff; 
@@ -108,18 +129,108 @@ background-position: fixed;
   width: 80%;
   display: flex;
   align-items: center;
-  border-radius: 15px;
   margin-top: 1rem;
   padding: 1rem;
+
 }
 .iconPlataforma img{
- 
   width: 80%;
   height: 10%;
   margin-right: 2rem;
-  
-
 }
+
+
+
+
+
+
+
+
+.sessaoYouTube{
+  display:flex;
+  align-items: center;   
+  justify-items: center;
+  
+}
+.containerSessaoYouTube{
+  width:100%;
+   display:flex;
+   align-items: center;
+   padding: 5px;
+}
+.imgSessaoYouTube{
+  margin: 5px;
+}
+
+.valorContador{
+  display:flex; 
+  justify-Content:center;
+  flex-direction: column;
+  text-align: center;
+}
+.valorContador span{
+  color:#fff;
+  font-Family: "Montserrat" , sans-Serif;
+  font-weight: 900 ;
+  font-Size:30px;
+}
+.valorContador h4{
+  color:#fff; 
+  font-Family: "Montserrat" , sans-Serif;
+  font-Weight: 900;
+  font-Size:25px;
+  
+}
+
+
+
+
+
+
+
+.sessaoFacebook{
+  display:flex;
+  align-items: center;   
+  justify-items: center;
+  
+}
+.containerSessaoFacebook{
+  width:100%;
+   display:flex;
+   align-items: center;
+   padding: 5px;
+}
+.imgSessaoFacebook{
+  margin: 5px;
+}
+
+
+
+
+.sessaoInstagram{
+  display:flex;
+  align-items: center;   
+  justify-items: center;
+  
+}
+.containerSessaoInstagram{
+  width:100%;
+   display:flex;
+   align-items: center;
+   padding: 5px;
+}
+.imgSessaoInstagram{
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
 .vdTrabalhoContainer{
   display:flex; 
   position:relative; 
@@ -146,6 +257,7 @@ background-position: fixed;
   justify-items: center;
   width: 70%;
   
+  
 }
 .vdTrabalho h1{
   color:#fff; 
@@ -163,15 +275,139 @@ background-position: fixed;
   
 }
 .video2{
- 
- width: 60%;
+ width:60%;
 }
 
-.btn_thumb{
- 
+.biografias{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  
+}
+.bioAilton{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  
 }
 
-@media (max-width:420px) {
+.bioAilton section{
+  padding: 1rem;
+  width: 40%;
+}
+.bioAilton section p{
+  color:#fff;
+  font-size:20px;
+  font-family: "Montserrat", sans-serif;
+}
+.bioValter{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  
+}
+.bioValter section{
+  padding: 1rem;
+  width: 40%;
+}
+.bioValter section p{
+  color:#fff;
+  font-size:20px;
+  font-family: "Montserrat", sans-serif;
+}
+.textBio{
+  color:#fff;
+  font-size:30px;
+  font-family: "Montserrat", sans-serif;
+}
+.bioDupla{
+ background-color:#fff;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerDupla{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  flex-direction: column;
+  
+  
+}
+.containerDupla p{
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+.linkVideoContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.clipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.chamadaCanalYouTube{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerFooter{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #D2B765;
+  border-top: #f3dd99 2px solid;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.localizacao{
+  font-family: "Montserrat", sans-serif;
+
+}
+.contatos{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+@media (max-width:440px) {
+  .navbar{
+    justify-content: center;
+  }
+  .navbar h3{
+    text-align: center;
+  }
+  
+  .icoNavbarRedes{
+    
+    width: 100%;
+    
+  }
   .video{
     
     position: fixed;
@@ -189,9 +425,8 @@ background-position: fixed;
   .containerVideos{
     display: flex;
     justify-content: center;
-   
-    width: 100%;
     
+    width: 100%;
     position: absolute;
     z-index: 100;
   
@@ -203,21 +438,12 @@ background-position: fixed;
     flex-wrap: wrap;
     flex-direction: column;
     justify-items: center;
-   
+    width: auto;
+    height: auto;
     
   }
-  .videoTrabalho h1{
-    color:#fff; 
-    font-family: "Montserrat", sans-serif; 
-    font-Weight: 900; 
-    font-Size:25px;
-    width: 80%;
-    color: #fff;
-  }
-  .video2{
-    
-   width: 60%;
-  }
+ 
+  
 
 
   .HeadDuplaGeral{
@@ -229,7 +455,7 @@ background-position: fixed;
 
 
   .HeadDuplaContainer{
-    margin-top: 6rem;
+     margin-top: 6rem;
      flex-direction: column;
      justify-items: center;
   }
@@ -240,7 +466,6 @@ background-position: fixed;
   }
   .logoImg{
     position: relative;
-    
     z-Index:100;
   }
   .HeadDuplaTexto{
@@ -255,9 +480,7 @@ background-position: fixed;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-    
     border-radius: 15px;
     margin-top: 1rem;
     padding: 1rem;
@@ -274,6 +497,87 @@ background-position: fixed;
     flex-direction: column;
     
   }
+  .sessaoFacebook{
+    margin-top: 3rem;
+  }
+  .sessaoInstagram{
+    margin-top: 3rem;
+  }
+
+ .vdTrabalho h1{
+  font-size: 25px;
+  margin-bottom: 2rem;
+ }
+
+
+  .bioAilton{
+    width:100%;
+    padding: none;
+    margin: none;
+    font-size: 15px;
+    
+  }
+  
+  .bioAilton section{
+    padding: 1rem;
+    width: 100%;
+    
+  }
+  .bioAilton section p{
+    
+    font-size:15px;
+    
+  }
+
+
+
+  .bioValter{
+    width:100%;
+    padding: none;
+    margin: none;
+    font-size: 15px;
+    
+    
+    
+  }
+  .bioValter section{
+    padding: 1rem;
+    width: 100%;
+  }
+  .bioValter section p{
+    font-size:15px;
+  }
+
+
+
+
+  
+
+   .containerDupla{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    flex-direction: column;
+    
+  }
+  
+  .containerDupla p{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    
+  }
+  .linkVideoContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .clipes{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+ 
 
 
 }

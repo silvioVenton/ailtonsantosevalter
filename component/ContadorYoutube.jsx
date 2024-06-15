@@ -1,30 +1,32 @@
 import Contador from "@/component/contador"
 import Image from "next/image";
-import style from "@/styles/Home.module.css"
+import styles from "@/styles/Home.module.css"
 export default function ContadorYoutube(valor){
     return(
         <>
-        <div style={{ display:"flex",alignItens:"center",  borderRadius:"3vh", justifyItens:"center"}}>
-            <div style={{width:"100%", display:"flex"}}>
-            <div>
+        <section className={styles.sessaoYouTube}>
+            <div className={styles.containerSessaoYouTube}>
+            
             <Image
                 src="/logoYouVerm.png"
-                width={90}
+                width={80}
                 height={80}
-                alt="youtube"
+                alt=" canal do youtube"
+                className={styles.imgSessaoYouTube}
+
             />
-            </div>
-            <div>
-            <div  style={{display:"flex", justifyContent:"center"}}>
-                    <span style={{color:"#fff", fontFamily:"Montserrat,sansSerif", fontWeight: "900", fontSize:"30px"}}><Contador valor="4000"/></span>
-                </div>
-                <div style={{marginLeft:"1rem"}}>
-                    <span style={{color:"#fff", fontFamily:"roboto", fontWeight: "900", fontSize:"25px"}}>Inscritos</span>
-                </div>
+            
+            <div className={styles.conteudoTxtContador}>
+                    <div className={styles.valorContador}>
+                            <span><Contador valor="4000"/></span>
+                            <h4>Inscritos</h4>
+                    </div>
+                   
+            
                 
             </div>
             </div>
-        </div>
+        </section>
         </>
     )
 }
