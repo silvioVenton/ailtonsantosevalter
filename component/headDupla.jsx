@@ -17,8 +17,8 @@ export default function HeadDupla() {
       <div className={styles.HeadDuplaContainer}>
         <div className={styles.HeadDuplaLogo}>
           <Image
-            src='/logo1.png'
-            width={200}
+            src='/logoAtual.png'
+            width={220}
             height={200}
             alt="logotipo"
             className={styles.logoImg}
@@ -27,7 +27,15 @@ export default function HeadDupla() {
         </div>
         <div className={styles.HeadDuplaTexto}>
           <div>
-            <span>Ailton Santos & Valter</span>
+            <Image
+            src="/nomeLogoAtual.png"
+            width={400}
+            height={180}
+            alt="nome do logotipo"
+            className={styles.nomeLogoAtual}
+            priority
+            />
+            
             <h4>Ouça agora mesmo nas plataformas.</h4>
           </div>
           <div className={styles.iconPlataforma}>

@@ -474,6 +474,10 @@
     position: relative;
     z-Index:100;
   }
+
+  .nomeLogoAtual{
+    width: 90%;
+  }
   .HeadDuplaTexto{
     width:100%;
     padding: 2rem;

@@ -5,7 +5,7 @@ const VerVideoTrabalho = ({ videoId }) => {
     
       
       <div className="video-container">
-        <iframe style={{}}
+        <iframe 
           width="100%"
           height="615"
           src={`https://www.youtube.com/embed/${videoId}`}
