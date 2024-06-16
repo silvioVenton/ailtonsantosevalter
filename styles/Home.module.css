@@ -368,6 +368,7 @@
   padding: 1rem;
 }
 .chamadaCanalYouTube{
+  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -576,6 +577,16 @@
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+  }
+  .localizacao{
+   
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  
+  }
+  .contatos{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
   }
  
 
