@@ -353,6 +353,8 @@
   
 }
 .containerDupla p{
+  z-index: 2;
+  color: #000;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
@@ -373,6 +375,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+}
+.chamadaCanalYouTube p{
+  color: #000;
 }
 
 .containerFooter{
@@ -563,6 +568,7 @@
   }
   
   .containerDupla p{
+    
     text-align: center;
     font-size: 25px;
     font-family: "Montserrat", sans-serif;
