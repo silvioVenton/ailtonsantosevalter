@@ -560,6 +560,10 @@
     font-size:15px;
   }
 
+  .bioDupla{
+    flex-wrap: wrap;
+  }
+
 
 
 
@@ -587,6 +591,7 @@
   }
   .clipes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
   }
