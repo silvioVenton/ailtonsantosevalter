@@ -60,16 +60,16 @@ export default function Dupla() {
                     <p>23 anos compondo e glorificando as maravilhas de Deus </p>
             
                     <section className={styles.clipes}>
-                            <a href="https://www.youtube.com/watch?v=oCcJCOuaAIU" target="_blank" rel="noopener noreferrer">
+                            <a href="https://youtu.be/kMXRrcNWZPI?si=rvqaId_xzVgVHH6o" target="_blank" rel="noopener noreferrer">
                             <Image
-                            src="/dependente.jpg"
+                            src="/tudoporele.jpg"
                             width={250}
                             height={200}
                             alt="album Dependente"
                             className={styles.capaDependente}
                             />
                             </a>
-                            <a href="https://www.youtube.com/watch?v=wQG9BNrsLDs" target="_blank" rel="noopener noreferrer">
+                            <a href="https://youtu.be/wQG9BNrsLDs" target="_blank" rel="noopener noreferrer">
                             <Image
                             src="/duasIgrejas.jpg"
                             width={250}
@@ -79,9 +79,39 @@ export default function Dupla() {
                             />
                             </a>
                              
-                            <a href="https://www.youtube.com/watch?v=mMI-c03_wUw"  target="_blank" rel="noopener noreferrer"> 
+                            <a href="https://youtu.be/Gi8Mj69W2dI?si=wgwMnGy68HV9TskE"  target="_blank" rel="noopener noreferrer"> 
                             <Image
                             src="/evitePecado.jpg"
+                            width={250}
+                            height={200}
+                            alt="album Dependente"
+                            className={styles.capaDependente}
+                            />
+                            </a>
+
+                            <a href="https://youtu.be/-hfyk0ArqfE"  target="_blank" rel="noopener noreferrer"> 
+                            <Image
+                            src="/orasoueternidade.jpg"
+                            width={250}
+                            height={200}
+                            alt="album Dependente"
+                            className={styles.capaDependente}
+                            />
+                            </a>
+
+                            <a href="https://youtu.be/odPE4Y156RY"  target="_blank" rel="noopener noreferrer"> 
+                            <Image
+                            src="/porquenasci.jpg"
+                            width={250}
+                            height={200}
+                            alt="album Dependente"
+                            className={styles.capaDependente}
+                            />
+                            </a>
+
+                            <a href="https://youtu.be/76ksFiu5W2c"  target="_blank" rel="noopener noreferrer"> 
+                            <Image
+                            src="/meulouvor.jpg"
                             width={250}
                             height={200}
                             alt="album Dependente"

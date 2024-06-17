@@ -339,7 +339,7 @@
  background-color:#fff;
   width:100%;
   display:flex;
-  flex-wrap: wrap;
+ 
   align-items: center;
   justify-content: space-evenly;
 }
@@ -364,10 +364,12 @@
   flex-wrap: wrap;
 }
 .clipes{
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1rem;
+  
 }
 .chamadaCanalYouTube{
   z-index: 2;
